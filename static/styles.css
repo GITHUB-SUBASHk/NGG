@@ -1,0 +1,142 @@
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Segoe UI', cursive, sans-serif;
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.game-container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #fffbe7;
+  padding: 2em 1.5em 1.5em 1.5em;
+  border-radius: 22px;
+  box-shadow: 0 0 32px #ffd70088;
+  animation: fadeIn 1s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.2em;
+  font-family: 'Luckiest Guy', 'Comic Sans MS', cursive, sans-serif;
+  color: #ff9800;
+  font-size: 2.3em;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #fff176, 0 0 8px #ff9800;
+}
+
+.label {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.select {
+  width: 100%;
+  padding: 0.6em;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.5em;
+  margin: 1em 0 0.5em 0;
+}
+
+.input {
+  flex: 1;
+  padding: 0.7em;
+  border-radius: 10px;
+  border: 2px solid #ffd600;
+  font-size: 1.1em;
+  background: #fffde7;
+  color: #222;
+}
+
+.btn-row {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding: 0.6em 1.2em;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  background: #444;
+  color: #fff;
+  box-shadow: 0 2px 8px #ffecb3;
+}
+
+.btn.primary { background: #4caf50; }
+.btn.primary:hover { background: #388e3c; }
+.btn.secondary { background: #2196f3; }
+.btn.secondary:hover { background: #1769aa; }
+.btn.success { background: #ff9800; }
+.btn.success:hover { background: #c66900; }
+.btn.danger { background: #e53935; }
+.btn.danger:hover { background: #ab000d; }
+
+.info {
+  margin-bottom: 0.3em;
+  font-size: 1.08em;
+}
+
+.hint {
+  margin: 0.7em 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #ff9800;
+  text-shadow: 1px 1px 0 #fffde7;
+  min-height: 1.2em;
+  transition: color 0.2s;
+}
+
+.ai {
+  margin-bottom: 0.5em;
+  color: #80cbc4;
+  min-height: 1.2em;
+}
+
+.winner {
+  margin: 0.7em 0 0.5em 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #43c6ac;
+  text-shadow: 1px 1px 0 #fffde7;
+  min-height: 1.2em;
+  transition: color 0.2s;
+}
+
+.winner.loser {
+  color: #e53935;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    max-width: 98vw;
+    padding: 1em 0.5em 1em 0.5em;
+  }
+  .input-row, .btn-row {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}

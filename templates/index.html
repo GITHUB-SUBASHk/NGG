@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎯 Number Guessing Game</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎯 Number Guessing Game</h1>
+
+    <div class="mode-selector">
+      <label><input type="radio" name="mode" value="single" checked> Single Player</label>
+      <label><input type="radio" name="mode" value="two"> Two Player</label>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div class="game-info" id="game-info" style="display: none;">
+      <h2>Level <span id="level">1</span> — <span id="filter">All Numbers</span></h2>
+      <p><strong>Player A Attempts:</strong> <span id="attemptsA">3</span></p>
+      <p><strong>Player B Attempts:</strong> <span id="attemptsB">-</span></p>
+      <p><strong>Current Turn:</strong> <span id="turn">A</span></p>
+
+      <input type="number" id="guessInput" placeholder="Enter your guess">
+      <button onclick="submitGuess()">Submit</button>
+
+      <div id="feedback"></div>
+      <div id="computerFeedback" style="margin-top:10px;"></div>
+
+      <div id="controlButtons" style="margin-top: 20px;">
+        <button onclick="retryLevel()">🔁 Retry</button>
+        <button onclick="nextLevel()">⏭️ Next Level</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/game.js"></script>
+</body>
+</html>
