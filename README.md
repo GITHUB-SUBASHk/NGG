@@ -99,12 +99,12 @@ guessing_web_app/
 
 ## 📝 License
 
-MIT License
+MIT License(not yet)
 
 ---
 
 **Enjoy the game!**
-ustomization
+customization
 You can extend the game by editing logic/game_engine.py:
 
 Add more levels or filters
@@ -125,5 +125,5 @@ Track high scores or session data
 📱 Mobile responsive UI
 
 👨‍💻 Created by
-K Subash – powered by Flask, logic, and learning 🚀
+SUBASH K – powered by Flask, logic, and learning 🚀
 Feel free to fork, customize, and expand!
