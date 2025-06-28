@@ -56,4 +56,6 @@ def next_level():
     return jsonify(g.get_game_state())
 
 if __name__ == '__main__':
+    app.run(debug=True)  # ✅ PROPERLY indented
+
     # Use PORT from environment for deployment (e.g., Render)
