@@ -3,7 +3,8 @@ from logic.game_engine import NumberGuessingGame
 import os
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
+# Use a fixed secret key from environment variable for deployment
+app.secret_key = os.environ.get('SECRET_KEY', 'your-default-insecure-key')
 
 @app.route('/')
 def index():
@@ -55,4 +56,4 @@ def next_level():
     return jsonify(g.get_game_state())
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Use PORT from environment for deployment (e.g., Render)
