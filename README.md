@@ -1,14 +1,10 @@
-# NGG
-number predicting game
-# 🎯 Number Guessing Game Web App
+**Number Guessing Game Web App**
 
 A fun, colorful, and adaptive number guessing game for kids and families!  
 Play in **Single Player** (vs Computer AI) or **Dual Player** (A vs B) mode.  
 Built with Flask (Python), HTML, CSS, and JavaScript.
-
 ---
-
-## 🚀 Features
+🚀 Features
 
 - **Single Player Mode:**  
   - Guess the secret number with hints ("Higher"/"Lower").
@@ -27,10 +23,22 @@ Built with Flask (Python), HTML, CSS, and JavaScript.
 - **Child-Friendly UI:**  
   - Playful fonts, bright colors, and big buttons.
   - Responsive and mobile-friendly.
-
 ---
+🖥️ How to Run
+**PULL THE REPO**
+Use render for on the go hosting
 
-## 🖥️ How to Run
+**Start Command**
+Render runs this command to start your app with each deploy.
+
+$gunicorn app:app
+
+**Build Command**
+Render runs this command to build your app before each deploy.
+
+$pip install -r requirements.txt
+
+else;
 
 1. **Clone or Download this Repository**
 
@@ -45,11 +53,11 @@ Built with Flask (Python), HTML, CSS, and JavaScript.
    ```
 
 4. **Open in Browser**
-   - Go to [http://localhost:5000](http://localhost:5000)
+   - Go to [http://localhost:5000]
 
 ---
 
-## 🕹️ How to Play
+🕹️ How to Play
 
 1. **Choose Mode:**  
    - Single Player (You vs Computer)  
@@ -69,7 +77,7 @@ Built with Flask (Python), HTML, CSS, and JavaScript.
 
 ---
 
-## 📁 Project Structure
+📁 Project Structure
 
 ```
 guessing_web_app/
@@ -89,7 +97,7 @@ guessing_web_app/
 
 ---
 
-## 👦👧 For Kids!
+👦👧 For Kids- early teens!
 
 - Big, bold, and friendly fonts
 - Fun colors and easy controls
@@ -97,14 +105,17 @@ guessing_web_app/
 
 ---
 
-## 📝 License
+📝 License
 
-MIT License(not yet)
+MIT License @2025 (SUBASH K)
 
 ---
 
 **Enjoy the game!**
-customization
+🙌 Contributions are welcome. Please fork the repo and create a pull request. For major changes, please open an issue first to discuss the proposed change.
+
+**Customization**
+
 You can extend the game by editing logic/game_engine.py:
 
 Add more levels or filters
@@ -115,7 +126,7 @@ Modify AI behavior (e.g., make it smarter/faster)
 
 Track high scores or session data
 
-💡 Future Improvements
+💡 **Future Improvements**
 🌐 Online multiplayer (via WebSockets)
 
 🏆 Leaderboard and stats tracking
@@ -126,4 +137,6 @@ Track high scores or session data
 
 👨‍💻 Created by
 SUBASH K – powered by Flask, logic, and learning 🚀
+
 Feel free to fork, customize, and expand!
+we enchance :)
